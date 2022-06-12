@@ -1,0 +1,17 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "ela-block/instagram-carousel",
+  "version": "0.1.0",
+  "title": "Instagram Carousel",
+  "category": "ela-block",
+  "icon": "instagram",
+  "description": "This is a instagram image slider gutenberg block",
+  "supports": {
+    "html": false
+  },
+  "textdomain": "ela-block",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css"
+}

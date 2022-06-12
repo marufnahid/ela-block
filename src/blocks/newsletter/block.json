@@ -1,0 +1,82 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "ela-block/newsletter",
+  "version": "0.1.0",
+  "title": "Newsletter",
+  "category": "ela-block",
+  "icon": "email-alt",
+  "description": "This is a mailchimp newsletter gutenberg block",
+  "attributes": {
+	"title": {
+	  "type": "string",
+	  "selector": ".wp-block-coblocks-alert__title",
+	  "default": "Subscribe to our newsletter"
+	},
+	"placeholderText": {
+	  "type": "string",
+	  "default": "Enter your email"
+	},
+	"buttonText": {
+	  "type": "string",
+	  "default": "Subscribe"
+	},
+	"titleFontSize": {
+	  "type": "integer",
+	  "default": "20"
+	},
+	"titleColor": {
+	  "type": "string",
+	  "default": "red"
+	},
+	"padding": {
+	  "type": "number",
+	  "default": "30"
+	},
+	"marginTop": {
+	  "type": "number",
+	  "default": "20"
+	},
+	"marginBottom": {
+	  "type": "integer",
+	  "default": "20"
+	},
+	"inputWidth": {
+	  "type": "integer",
+	  "default": "75"
+	},
+	"inputHeight": {
+	  "type": "integer",
+	  "default": "70"
+	},
+	"buttonWidth": {
+	  "type": "integer",
+	  "default": "23"
+	},
+	"buttonHeight": {
+	  "type": "integer",
+	  "default": "75"
+	},
+	"blockBgColor": {
+	  "type": "string",
+	  "default": "#fff"
+	},
+	"buttonTextColor": {
+	  "type": "string",
+	  "default": "#fff"
+	},
+	"buttonBgColor": {
+	  "type": "string",
+	  "default": "red"
+	}
+
+
+  },
+  "supports": {
+	"html": false
+  },
+  "textdomain": "ela-block",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css"
+}
