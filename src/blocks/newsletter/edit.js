@@ -154,10 +154,10 @@ export default function Edit({attributes, setAttributes}) {
 					{ ...blockProps }
 					style={ {color: attributes.titleColor, fontSize: attributes.titleFontSize+"px"} }
 					tagName="h3"
-					value={ attributes.title } // Any existing content, either from the database or an attribute default
-					allowedFormats={ [ 'core/bold', 'core/italic' ] } // Allow the content to be made bold or italic, but do not allow other formatting options
-					onChange={ ( title ) => setAttributes( { title } ) } // Store updated content as a block attribute
-					placeholder={ __( 'Title...' ) } // Display this text before any content has been added by the user
+					value={ attributes.title }
+					allowedFormats={ [ 'core/bold', 'core/italic' ] }
+					onChange={ ( title ) => setAttributes( { title } ) }
+					placeholder={ __( 'Title...' ) }
 				/>
 				<form className="mailchimp inputSubscribeDiv">
 					<div className="input-wrap">

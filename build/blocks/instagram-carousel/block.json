@@ -10,7 +10,76 @@
   "supports": {
     "html": false
   },
+  "attributes": {
+    "id": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string",
+      "selector": ".wp-block-coblocks-alert__title",
+      "default": "Follow @themexplosion"
+    },
+    "titleFontSize": {
+      "type": "integer",
+      "default": "20"
+    },
+    "titleColor": {
+      "type": "string",
+      "default": "red"
+    },
+    "padding": {
+      "type": "number",
+      "default": "30"
+    },
+    "marginTop": {
+      "type": "number",
+      "default": "20"
+    },
+    "marginBottom": {
+      "type": "integer",
+      "default": "20"
+    },
+    "blockBgColor": {
+      "type": "string",
+      "default": "#fff"
+    },
+    "buttonTextColor": {
+      "type": "string",
+      "default": "#fff"
+    },
+    "buttonBgColor": {
+      "type": "string",
+      "default": "red"
+    },
+    "images": {
+      "type": "array",
+      "source": "query",
+      "selector": ".slider-item",
+      "default": [],
+      "query": {
+        "mediaID": {
+          "type": "number",
+          "source": "attribute",
+          "attribute": "data-id",
+          "selector": "img"
+        },
+        "mediaURL": {
+          "type": "string",
+          "source": "attribute",
+          "attribute": "src",
+          "selector": "img"
+        },
+        "thumbnail": {
+          "type": "string",
+          "source": "attribute",
+          "attribute": "data-thumb",
+          "selector": "img"
+        }
+      }
+    }
+  },
   "textdomain": "ela-block",
+  "script": "ela-block-main",
   "editorScript": "file:./index.js",
   "editorStyle": "file:./index.css",
   "style": "file:./style-index.css"

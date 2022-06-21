@@ -232,16 +232,12 @@ function Edit(_ref) {
       fontSize: attributes.titleFontSize + "px"
     },
     tagName: "h3",
-    value: attributes.title // Any existing content, either from the database or an attribute default
-    ,
-    allowedFormats: ['core/bold', 'core/italic'] // Allow the content to be made bold or italic, but do not allow other formatting options
-    ,
+    value: attributes.title,
+    allowedFormats: ['core/bold', 'core/italic'],
     onChange: title => setAttributes({
       title
-    }) // Store updated content as a block attribute
-    ,
-    placeholder: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__.__)('Title...') // Display this text before any content has been added by the user
-
+    }),
+    placeholder: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__.__)('Title...')
   })), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.createElement)("form", {
     className: "mailchimp inputSubscribeDiv"
   }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.createElement)("div", {
